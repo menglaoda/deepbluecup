@@ -1,0 +1,96 @@
+body{
+	background: #76a6d7;
+}
+.mytitle{
+	color: white;
+	font-size: 35px;
+	padding: 110px 0px 54px;
+	text-align: center;	
+}
+.mybox{
+	overflow: hidden;
+	width: 800px;
+	height: 350px;
+	background: white;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 14px 4px rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: space-between;
+}
+.box-l{
+	width: 400px;
+	height: 100%;
+	background: url(../img/bg11.png) no-repeat 0px 0px/cover;
+}
+.box-r{
+	width: 400px;
+	padding: 0px 48px;
+	box-sizing: border-box;
+	color: #666666;
+	padding-top: 20px;
+	position: relative;
+}
+.list{
+	list-style: none;
+}
+.list li{
+	margin-top: 20px;
+}
+.list input{
+	width: 100%;
+	height: 38px;
+	text-indent: 15px;
+	border: solid 1px #cccccc;
+	outline: medium;
+}
+.list .mycheck{
+	width: auto;
+	height: auto;
+}
+.list label{
+	font-size: 13px;
+}
+.login-btn{
+	color: white;
+	text-indent: 0px;
+	background: #62a8d7;
+	border: none;
+}
+.list li:last-child{
+	text-align: right;
+}
+.list a{
+	font-size: 13px;
+	color: #666;
+	text-decoration: none;
+}
+.err{
+	width: 100%;
+	color: red;
+	font-size: 14px;
+	position: absolute;
+	top: -30px;
+	left: 0;
+	text-align: center;
+	transition: all 1s;
+}
+
+
+/*媒体查询，设备宽度小于等于640px时，使用里边的css代码*/
+@media  screen  and (max-width: 640px) {
+	.mybox{
+		width: 90%;
+		height: auto;
+		padding: 0px 0px 20px;
+	}
+	.box-l{
+		display: none;
+	}
+	.box-r{
+		padding: 10px 15px 0px;
+	}
+	.mytitle{
+		padding: 45px 0px 20px;
+	}
+}

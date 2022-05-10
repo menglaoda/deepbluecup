@@ -1,0 +1,40 @@
+.mybox{
+	width: 400px;
+	height: auto;
+	padding-bottom: 20px;
+}
+.box-l{
+	display: none;
+}
+.box-r span{
+	font-size: 13px;
+	text-indent: 1em;
+	display: inline-block;
+}
+.list li{
+	margin-top: 15px;
+	position: relative;
+}
+.list img{
+	position: absolute;
+	width: 20px;
+	right: 6px;
+	top: 9px;
+	display: none;
+}
+@media  screen  and (max-width: 640px) {
+	.mybox{
+		width: 90%;
+		height: auto;
+		padding: 10px 0px 20px;
+	}
+	.box-l{
+		display: none;
+	}
+	.box-r{
+		padding: 0px 15px;
+	}
+	.mytitle{
+		padding: 45px 0px 20px;
+	}
+}
